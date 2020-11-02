@@ -2,8 +2,10 @@
 
 .Flickity-container {
   @include flex;
-  @include box-dim(100%, 500px);
+  // @include box-dim(100%, 500px);
+  height: 500px;
   @include position(absolute, $top: 33%);
+  padding-left: 20%;
   .inner-carousel {
     @include box-dim;
     z-index: 3;

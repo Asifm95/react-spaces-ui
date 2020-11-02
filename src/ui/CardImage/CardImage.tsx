@@ -22,7 +22,8 @@ const CardImage: React.FC<Partial<CardImageType>> = ({
       transition={isSelected ? openSpring : closeSpring}
     >
       <motion.img
-        data-flickity-lazyload={bgImage}
+        // data-flickity-lazyload={bgImage}
+        src={bgImage}
         alt=""
         ref={imgRef}
         initial={false}
