@@ -6,7 +6,7 @@ import "./Main.scss"
 import "styles/flickity.css"
 import Card from "components/Card/Card"
 import spaces from "model/spaceList.json"
-import { BrowserRouter as Router, Route } from "react-router-dom"
+import { Route, HashRouter } from "react-router-dom"
 import { store } from "store/store"
 import { flickityOptions } from "utils/flickity-conf"
 import { Space } from "model/interface"
@@ -117,9 +117,9 @@ const Main = ({ match, history }) => {
 }
 
 const MainRoute = () => (
-  <Router>
+  <HashRouter basename="/">
     <Route path={["/:id", "/"]} component={Main} />
-  </Router>
+  </HashRouter>
 )
 
 export default MainRoute
