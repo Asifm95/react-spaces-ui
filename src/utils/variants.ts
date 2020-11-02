@@ -54,7 +54,7 @@ export const flicktyVariants: Variants = {
 
 export const ImageVariants: Variants = {
   hidden: {
-    height: 400,
+    height: 450,
   },
   visible: { height: 304 },
 }
