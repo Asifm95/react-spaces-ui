@@ -1,4 +1,4 @@
-# react-space-ui 🚀
+# react-spaces-ui 🚀
 
 Inspired by the Invision Projects - [Spaces iOS][spaces_ui] of [@Charles Patterson][charles_p], this is a working prototype built using React + Framer Motion.
 
