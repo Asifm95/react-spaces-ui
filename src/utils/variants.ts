@@ -1,5 +1,6 @@
-import { isMobileDevice } from "index"
-
+const isMobileDevice = () =>
+  typeof window.orientation !== "undefined" ||
+  navigator.userAgent.indexOf("IEMobile") !== -1
 export interface Variants {
   [key: string]: Object
 }
