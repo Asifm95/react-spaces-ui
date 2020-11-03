@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-spaces-ui/static/css/main.45630d3e.chunk.css",
-    "main.js": "/react-spaces-ui/static/js/main.ca1e981b.chunk.js",
-    "main.js.map": "/react-spaces-ui/static/js/main.ca1e981b.chunk.js.map",
+    "main.js": "/react-spaces-ui/static/js/main.b9434319.chunk.js",
+    "main.js.map": "/react-spaces-ui/static/js/main.b9434319.chunk.js.map",
     "runtime-main.js": "/react-spaces-ui/static/js/runtime-main.8db45d17.js",
     "runtime-main.js.map": "/react-spaces-ui/static/js/runtime-main.8db45d17.js.map",
     "static/js/2.64c87cf9.chunk.js": "/react-spaces-ui/static/js/2.64c87cf9.chunk.js",
     "static/js/2.64c87cf9.chunk.js.map": "/react-spaces-ui/static/js/2.64c87cf9.chunk.js.map",
     "index.html": "/react-spaces-ui/index.html",
-    "precache-manifest.8521916910d6b1625f827b44adbc0164.js": "/react-spaces-ui/precache-manifest.8521916910d6b1625f827b44adbc0164.js",
+    "precache-manifest.d364d9af3036b934c687d3b43b22f5c4.js": "/react-spaces-ui/precache-manifest.d364d9af3036b934c687d3b43b22f5c4.js",
     "service-worker.js": "/react-spaces-ui/service-worker.js",
     "static/css/main.45630d3e.chunk.css.map": "/react-spaces-ui/static/css/main.45630d3e.chunk.css.map",
     "static/js/2.64c87cf9.chunk.js.LICENSE.txt": "/react-spaces-ui/static/js/2.64c87cf9.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8db45d17.js",
     "static/js/2.64c87cf9.chunk.js",
     "static/css/main.45630d3e.chunk.css",
-    "static/js/main.ca1e981b.chunk.js"
+    "static/js/main.b9434319.chunk.js"
   ]
 }
