@@ -55,7 +55,7 @@ const Track = ({ children }) => {
       drag={"x"}
       //   onDragEnd={onDragEnd}
       dragConstraints={{
-        left: -(1000 / 1.5),
+        left: -(768 / 1.5),
         right: 0,
       }}
       style={{ ...inverted }}

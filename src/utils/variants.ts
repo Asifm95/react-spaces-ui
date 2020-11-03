@@ -1,3 +1,5 @@
+import { isMobileDevice } from "index"
+
 export interface Variants {
   [key: string]: Object
 }
@@ -54,7 +56,7 @@ export const flicktyVariants: Variants = {
 
 export const ImageVariants: Variants = {
   hidden: {
-    height: 450,
+    height: isMobileDevice() ? 400 : 450,
   },
   visible: { height: 304 },
 }

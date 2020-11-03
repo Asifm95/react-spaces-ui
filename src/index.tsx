@@ -4,7 +4,7 @@ import "./index.css"
 import App from "./App"
 import * as serviceWorker from "./serviceWorker"
 
-const isMobileDevice = () =>
+export const isMobileDevice = () =>
   typeof window.orientation !== "undefined" ||
   navigator.userAgent.indexOf("IEMobile") !== -1
 
