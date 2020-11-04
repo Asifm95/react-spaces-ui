@@ -39,6 +39,13 @@
         @include box-dim(35px, 35px);
       }
     }
+
+    & .Card-star {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
   }
 }
 
