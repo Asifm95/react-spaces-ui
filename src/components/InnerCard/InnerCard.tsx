@@ -25,10 +25,23 @@ const InnerCard: React.FC<{ slide: Slide }> = ({ slide }) => {
     <div className="Card-container" ref={ref}>
       <div className="Inner-card">
         <div className="Card-content">
-          <CardImage bgImage={slide?.bg_image} animate={true} />
+          <div
+            style={{
+              width: "100%",
+              height: "100%",
+              background: "#e6e6e6",
+            }}
+          >
+            <CardImage
+              bgImage={slide?.bg_image}
+              animate={true}
+              clipImg={true}
+            />
+          </div>
           <Info
             title={slide.title}
             description={slide.description}
+            showStar={true}
             style={{}}
           />
         </div>

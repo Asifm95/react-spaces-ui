@@ -40,6 +40,7 @@ export interface InfoType {
   title: string
   description: Description
   style: any
+  showStar?: boolean
   isDescTitle?: boolean
   thumbs?: null | FaceThumb[]
   animation?: Animations
@@ -49,4 +50,5 @@ export interface CardImageType {
   imgRef
   isSelected: boolean
   animate: boolean
+  clipImg?: boolean
 }

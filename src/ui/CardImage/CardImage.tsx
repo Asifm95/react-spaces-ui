@@ -10,13 +10,19 @@ const CardImage: React.FC<Partial<CardImageType>> = ({
   imgRef,
   isSelected = false,
   animate = false,
+  clipImg = false,
 }) => {
   const inverted = useInvertedScale()
 
   return (
     <motion.div
       className="Card-image"
-      style={{ ...inverted, originX: 0, originY: 0 }}
+      style={{
+        ...inverted,
+        originX: 0,
+        originY: 0,
+        clip: clipImg ? "rect(50px, 250px, 306px, 50px)" : "",
+      }}
       variants={ImageVariants}
       animate={animate ? "visible" : isSelected ? "hidden" : "visible"}
       transition={isSelected ? openSpring : closeSpring}
@@ -28,6 +34,7 @@ const CardImage: React.FC<Partial<CardImageType>> = ({
         ref={imgRef}
         initial={false}
         transition={closeSpring}
+        draggable="false"
       />
     </motion.div>
   )
