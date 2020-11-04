@@ -12,14 +12,18 @@ const InnerCard: React.FC<{ slide: Slide }> = ({ slide }) => {
 
   useEffect(() => {
     if (ref && ref.current && animationState) {
-      console.log(ref.current)
-      const x = ref.current.getBoundingClientRect().x
-      dispatch({ type: "ADD_ITEM", item: x - 112 })
+      // console.log(ref.current)
+      const containerRef = document.querySelector(".Flickity-container")
+      if (containerRef) {
+        const x = ref.current.getBoundingClientRect().x
+        const containerOffset = containerRef?.getBoundingClientRect().x
+        dispatch({ type: "ADD_ITEM", item: x - containerOffset })
+      }
     }
   }, [animationState, dispatch])
   return (
     <div className="Card-container" ref={ref}>
-      <div className="Card">
+      <div className="Inner-card">
         <div className="Card-content">
           <CardImage bgImage={slide?.bg_image} animate={true} />
           <Info

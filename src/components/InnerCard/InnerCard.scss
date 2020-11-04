@@ -6,7 +6,7 @@
     @include box-dim(300px, 428px);
     position: relative;
 
-    .Card {
+    .Inner-card {
         @include box-dim;
         position: relative;
         .Card-content {
