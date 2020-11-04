@@ -3,6 +3,7 @@ import "./Info.scss"
 import { motion, AnimatePresence } from "framer-motion"
 import { infoWrapperVariants } from "utils/variants"
 import { InfoType } from "model/interface"
+import star from "icons/star.png"
 
 const InfoWrapper = (props: Props<{}>) => (
   <div className="Card-info-wrapper">
@@ -30,6 +31,7 @@ const Info: React.FC<Partial<InfoType>> = ({
   style,
   isDescTitle = false,
   thumbs = null,
+  showStar = false,
   animation,
 }) => {
   const content = (
@@ -53,6 +55,11 @@ const Info: React.FC<Partial<InfoType>> = ({
               </span>
             )
         )}
+      {!!showStar && (
+        <span className={"Card-star"}>
+          <img src={star} alt={"star"} />
+        </span>
+      )}
     </>
   )
 
